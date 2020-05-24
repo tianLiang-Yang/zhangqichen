@@ -1,0 +1,53 @@
+@import '../../../../node_modules/antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+  :global {
+    //设置table的body高
+    .ant-table-tbody > tr > td {
+      height: 42px;
+      padding: 5px 6px;
+    }
+    //设置table的header高
+    .ant-table-thead > tr > th {
+      padding: 10px 6px;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.headImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  background-color: #888888;
+}
+
+.tableName {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightLayout {
+  display: flex;
+  justify-content: flex-end;
+}
+.rightChildLayout {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.InputContent {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  z-index: 100;
+  :global {
+    .ant-input {
+      border-radius: 20px;
+    }
+  }
+}

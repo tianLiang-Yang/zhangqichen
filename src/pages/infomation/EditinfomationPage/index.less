@@ -1,0 +1,118 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+  margin-bottom: 20px;
+  background: @component-background;
+  :global {
+    .ant-form-item-label {
+      text-align: right;
+    }
+    .ant-col {
+      height:60px;
+    }
+    .ant-upload-select-picture-card i {
+      color: #999;
+      font-size: 32px;
+    }
+    .ant-upload-select-picture-card .ant-upload-text {
+      margin-top: 8px;
+      color: #666;
+    }
+    .ant-upload-picture-card-wrapper {
+      width: 100% !important;
+    }
+    .ant-input {
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-left: 0;
+    }
+    .ant-select-selection{
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-left: 0;
+    }
+  }
+}
+
+.TopTitleClass {
+  width: 70px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  font-size: 16px;
+  border-bottom: 2px solid @primary-color;
+}
+.MyClick{
+  color: @primary-color;
+  cursor: pointer;
+}
+
+
+.ButtonStyle{
+  :global {
+    .ant-btn {
+      color: @primary-color;
+      border: 1px @primary-color solid;
+    }
+  }
+}
+.ImageHint{
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+.HLayout{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  >div:nth-of-type(1){
+    margin-right: 15px;
+  }
+}
+.FromItemContent{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Vcenter{
+  display: flex;
+  margin-top: 10px
+;
+}
+
+.defineInput {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 0;
+  padding-left: 15px;
+}
+
+.leftContrlDiv{
+  display: flex;
+  align-items: center;
+  height: 39.9px;
+  color: black;
+  line-height: 39.9px;
+ text-align: right;
+  justify-content: flex-end;
+}
+
+.EditStyle{
+  //display: flex;
+  width:100%;
+  margin-top:30px;
+  margin-bottom: 40px;
+  div:nth-of-type(1){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  div:nth-of-type(2){
+  }
+}

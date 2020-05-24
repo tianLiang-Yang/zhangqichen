@@ -1,0 +1,36 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+  :global{
+    .ant-divider-horizontal {
+      margin: 12px 0;
+    }
+  }
+}
+
+.TopStyle{
+  position: relative;
+  top: -40px;
+}
+
+.contentLayout{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  >div:nth-of-type(1){
+    width: 6%;
+    >img{
+      height:30px;
+    }
+  }
+  >div:nth-of-type(3){
+    width: 6%;
+    >img{
+      height:30px;
+    }
+  }
+
+}

@@ -1,0 +1,39 @@
+@import '~antd/es/style/themes/default.less';
+.main {
+  width: 320px;
+  height: 460px;
+}
+.mainInner {
+  padding: 20px 20px;
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: white;
+  :global {
+
+  }
+  .first_div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+    >span>img{
+      width: 25px;
+    }
+  }
+  .second_div{
+    margin-top: 15px;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    >div{
+      padding: 8px;
+      border: #B3B3B3 solid 1px;
+    }
+  }
+  .three_div{
+    color: @primary-color;
+    margin-top: 10px;
+  }
+
+}

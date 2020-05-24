@@ -1,0 +1,27 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  :global {
+    //设置table的body高
+    .ant-table-tbody > tr > td {
+      height:42px;
+      padding:0px 8px;
+    }
+    //设置table的header高
+    .ant-table-thead > tr > th {
+      padding: 12px 8px;
+      background-color: #F2F2F2;
+    }
+  }
+}
+
+.PaginationBottom{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  >div:nth-of-type(1){
+    >span{
+      color: @primary-color;
+    }
+  }
+}

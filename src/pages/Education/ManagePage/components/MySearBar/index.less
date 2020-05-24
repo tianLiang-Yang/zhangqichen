@@ -1,0 +1,78 @@
+
+.main {
+  //display: none;
+  //display: block;
+}
+
+.HLayout{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  >div:nth-of-type(1) {
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  >div:nth-of-type(2){
+    width: 70%;
+  }
+  :global {
+    .ant-select-selection {
+      border-radius: 16px;
+    }
+    .ant-input {
+      border-radius: 16px;
+    }
+  }
+}
+.SearchStyle{
+  padding-top: 8px;
+}
+
+.MyCol{
+  margin-top: 9px;
+}
+.downLine {
+  height: 0.5px;
+  background-color: #e2e2e2;
+}
+.DownLayout{
+  display: flex;
+  justify-content: center;
+}
+
+.ClickStyle {
+  width: 80px;
+  //height: 15px;
+}
+
+.MyInput{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    border-radius: 16px;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+}
+
+.CourseclassStyle {
+  display: flex;
+  flex-direction: row;
+  div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+  }
+}

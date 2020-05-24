@@ -1,0 +1,42 @@
+@import '~antd/es/style/themes/default.less';
+.main {
+  background-color:white;
+  :global{
+    .ant-select-selection{
+        border-radius: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        box-shadow:0px 0px 0px #888888
+      }
+      .ant-card-grid{
+        width: 50%;
+      }
+  }
+}
+
+.oprationItem{
+  >a{
+    color: @primary-color;
+  }
+}
+
+.InputContent{
+  //background-color: #68C771;
+  margin-bottom: -40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  z-index: 100;
+  left: 38%;
+  :global{
+    .ant-input{
+      border-radius: 20px;
+    }
+  }
+}
+.IconContent{
+  position: relative;
+  top: 5px;
+}

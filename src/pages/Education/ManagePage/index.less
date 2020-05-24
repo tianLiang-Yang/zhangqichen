@@ -1,0 +1,62 @@
+@import '../../../../node_modules/antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+}
+
+.topLayout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HLayout{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.HTopLayout{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  >div{
+    margin-left: 20px;
+    color: #169BDB;
+    cursor: pointer;
+  }
+}
+
+.DividerStyle {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+.MyHLayout{
+  position: relative;
+  top: 35px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modelStyle{
+  display: flex;
+  flex-direction: row;
+  >div:nth-of-type(1){
+    width: 49%;
+  }
+  >div:nth-of-type(2){
+    width: 2%;
+  }
+  >div:nth-of-type(3){
+    width: 49%;
+  }
+}
+
+.centerLayout{
+  display: flex;
+  justify-content: center;
+}
+
+

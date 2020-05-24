@@ -1,0 +1,44 @@
+.main {
+  width: 100%;
+  background: white;
+}
+
+.moreRowInput{
+  :global{
+    .ant-input {
+      border: 1px solid #d9d9d9;
+    }
+  }
+}
+
+.LeftBox{
+  display: flex;
+  justify-content: flex-end;
+  >div{
+    padding-left: 5px;
+    border-left: 3.5px @primary-color solid;
+    color: black;
+  }
+}
+
+.LeftBottomBox{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.BotttomLayout{
+  display: flex;
+  justify-content: center;
+  >div:nth-of-type(1){
+    display: flex;
+    flex-direction: row;
+    >div:nth-of-type(1){
+      :global {
+        .ant-btn {
+          border: 1px @primary-color solid;
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}

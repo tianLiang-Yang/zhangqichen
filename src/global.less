@@ -1,0 +1,124 @@
+@import '~antd/es/style/themes/default.less';
+@Gary: #eeeeee;
+@Green: '#00A980';
+@Green2: '#6F9435';
+@Blue: '#02A7F0';
+@Yellow: '#FFBF00';
+@Origin: '#F57451';
+@Gray: '#C4C4C4';
+@Gray2: 'rgba(0, 0, 0, 0.65)';
+@Gray3: '#878787';
+@Red: '#D9001B';
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+//@media (max-width: @screen-xs) {
+//  .ant-table {
+//    width: 100%;
+//    overflow-x: auto;
+//    &-thead > tr,
+//    &-tbody > tr {
+//      > th,
+//      > td {
+//        white-space: pre;
+//        > span {
+//          display: block;
+//        }
+//      }
+//    }
+//  }
+//}
+
+:global {
+  .ant-menu.ant-menu-dark .ant-menu-item-selected,
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: #68c771;
+  }
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background-color: @primary-color;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background-color: @primary-color;
+  box-shadow: none !important;
+}
+
+.ant-pro-sider-menu-sider.fix-sider-bar {
+  background-color: @primary-color;
+}
+
+.ant-pro-sider-menu-logo {
+  background-color: @primary-color;
+  border-bottom: 1px solid #68c771;
+}
+.ant-layout-sider-children {
+  background-color: @primary-color;
+}
+
+////设置table的body高
+//.ant-table-tbody > tr > td {
+//  height:42px;
+//  padding:5px 8px;
+//}
+////设置table的header高
+//.ant-table-thead > tr > th {
+//  padding: 12px 8px;
+//  background-color: #F2F2F2;
+//}
+//设置table为无滚动条
+.ant-table {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.ant-table-fixed-header .ant-table-scroll .ant-table-header {
+  margin-bottom: 0px !important;
+}
+
+//设置Card 的padding
+.ant-card-body {
+  padding-top: 10px;
+}
+
+.ant-modal-body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.ant-modal-wrap {
+  overflow: hidden;
+}
+
+// ant Tab 的内边距
+.ant-tabs-bar {
+  margin: 0 0 8px 0;
+}

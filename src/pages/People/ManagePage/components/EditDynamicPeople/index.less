@@ -1,0 +1,76 @@
+.main {
+  width: 100%;
+  background: white;
+  :global {
+    .ant-form-item-label {
+      text-align: right;
+    }
+    .ant-form-item {
+      margin-bottom: 8px !important;
+    }
+    .ant-input {
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-left: 0;
+    }
+    .ant-select-selection{
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-left: 0;
+    }
+  }
+}
+
+.ImageHint{
+  width: 55px;
+}
+
+.HLayout{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.HCenter{
+  display: flex;
+  justify-content: center;
+}
+.TextInputBox{
+  :global {
+    .ant-input {
+      border: 1px solid #d9d9d9;
+    }
+    .ant-select-selection{
+      border: 1px solid #d9d9d9;
+    }
+  }
+}
+
+.ButtonStyle{
+  :global {
+    .ant-btn {
+      border: 1px @primary-color solid;
+      color: @primary-color;
+    }
+  }
+}
+
+.Box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.TopTitleClass {
+  width:-webkit-fit-content;
+  width:fit-content;
+  width:-moz-fit-content;
+  margin-bottom: -2px;
+  border-bottom: 2px solid @primary-color;
+  padding-bottom: 5px;
+  color: black;
+}

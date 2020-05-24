@@ -1,0 +1,82 @@
+.main {
+  width: 100%;
+  background: white;
+  :global {
+    .ant-form-item-label {
+      text-align: right;
+    }
+    .ant-input {
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-left: 0;
+      border-radius: 0;
+    }
+  }
+}
+
+.CheckCount{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Box{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.GrideBox{
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: auto auto;
+  grid-gap: 20px 20px;
+}
+
+.ItemBox{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border: 0.8px #D7D7D7 solid;
+  :global {
+    .ant-checkbox {
+      display: block !important;
+    }
+    .ant-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.BoxTransfer {
+  overflow: auto;
+  height: 400px;
+  ::-webkit-scrollbar{
+    display:none;
+  }
+  -ms-overflow-style:none;
+  overflow:-moz-scrollbars-none;
+}
+
+
+.BotttomLayout{
+  display: flex;
+  justify-content: center;
+  >div:nth-of-type(1){
+    display: flex;
+    flex-direction: row;
+    >div:nth-of-type(1){
+      :global {
+        .ant-btn {
+          border: 1px @primary-color solid;
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+

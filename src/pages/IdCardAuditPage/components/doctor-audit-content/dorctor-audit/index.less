@@ -1,0 +1,144 @@
+@import '~antd/es/style/themes/default.less';
+//整体布局
+.main {
+  :global {
+  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //第一个div：基本信息模块
+  >div:nth-of-type(1){
+    flex: 3.5;
+    //background-color: #68C771;
+    display: flex;
+    align-items: center;
+    >img{
+      width: 120px;
+      height: 120px;
+      border-radius: 60px ;
+      border: 1px solid @primary-color ;
+    }
+    >div:nth-of-type(1){
+      padding-top: 10px;
+      flex: 1;
+      display: flex;
+      align-items: start;
+    }
+  }
+  //第二个div：资格图片
+  >div:nth-of-type(2){
+    flex:3;
+    //background-color: #1890ff;
+    >div:nth-of-type(2){
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      //background-color: #1890ff;
+    }
+  }
+  //第三个div：审核结果
+  >div:nth-of-type(3){
+    flex:2.5;
+    padding-top: 10px;
+    div:nth-of-type(1){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  //第四个div：确定取消
+  >div:nth-of-type(4){
+    flex: 1;
+    flex-direction: row;
+
+    >div:nth-of-type(1){
+      //border-top: #87939A 1px solid;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+        //确定;
+        >div:nth-of-type(1){
+          background-color: @primary-color;
+          color: white;
+        }
+        //取消
+        >div:nth-of-type(2){
+          margin-left: 10px;
+          border: 1px solid @primary-color;
+          color: @primary-color;
+        }
+    }
+  }
+  //基本信息模块>基本信息布局
+  .layout_info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.info_item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  >div:nth-of-type(1){
+     display: flex;
+     flex: 1;
+     justify-content: flex-end;
+  }
+  >div:nth-of-type(2){
+    display: flex;
+    flex: 1;
+    padding-left: 5px;
+    color: @primary-color;
+  }
+}
+
+
+.small_title{
+  width: 58px;
+  border-bottom: 1px solid @primary-color;
+  padding-bottom: 3px;
+  color: @primary-color;
+  margin-bottom: 10px;
+}
+
+.photoDiv{
+  margin-left: 5px;
+  width: 160px;
+  height: 100px;
+  border: solid 1px #D7D7D7;
+  position: relative;
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+.photo{
+  position: absolute;
+  //top: -50%;
+  width: 160px;
+}
+
+.button{
+  height: 36px;
+  border-radius:18px ;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+}
+
+.selectDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.wo{
+  width: 100%;
+  margin-left: 10%;
+  //display: none;
+}
+

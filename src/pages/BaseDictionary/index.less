@@ -1,0 +1,102 @@
+@import '~antd/es/style/themes/default.less';
+.Content {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eeeeee;
+  :global{
+    .ant-list-item {
+      padding: 6px 0;
+    }
+    //设置table的body高
+    .ant-table-tbody > tr > td {
+      height:42px;
+      padding:0px 10px;
+    }
+    //设置table的header高
+    .ant-table-thead > tr > th {
+      padding: 12px 10px;
+      background-color: #F2F2F2;
+    }
+  }
+}
+
+.ContentLeftTop {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 0;
+  background-color: #F2F2F2;
+}
+
+.Title {
+  color: @primary-color;
+  padding:8px 0;
+  font-size: 14px;
+}
+
+.ContentLeft {
+  flex: 2.1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ContentRight {
+  display: flex;
+  flex-direction: column;
+  flex:7.7;
+  display: flex;
+}
+
+.ItemXvHao {
+  display: flex;
+  justify-content: flex-end;
+  width:40px;
+  padding: 0px 5px;
+}
+
+.ItemDicType {
+  display: flex;
+  width:100px;
+  padding: 0px 5px;
+}
+
+.ItemOrg {
+  color: @primary-color;
+}
+
+.VLine{
+  width: 1px;
+  background: #eeeeee;;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+.BottomHitUI{
+  margin-top: 20px;
+  >p{
+    margin: 5px 0px 0px 0px;
+    line-height: 15px;
+    padding: 0px;
+  }
+}
+
+.TitlePromit{
+  color: @primary-color;
+  border-bottom: 1px solid @primary-color;
+  margin-top: 5px;
+}
+
+.standardListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+
