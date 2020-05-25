@@ -8,7 +8,7 @@ import {
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@@/history';
-import RendererWrapper0 from 'C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from 'D:/星愿/zhangqichen/src/pages/.umi/LocaleWrapper.jsx';
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
 
@@ -46,7 +46,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+            require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -72,6 +72,28 @@ const routes = [
             name: '首页',
             component: require('../Welcome').default,
             exact: true,
+            routes: [
+              {
+                name: '管理员',
+                path: '/review/doctorqualificationreview',
+                component: require('../DoctorQualificationReview').default,
+                exact: true,
+              },
+              {
+                name: '医生',
+                path: '/review/idcardauditpage',
+                component: require('../IdCardAuditPage').default,
+                exact: true,
+              },
+              {
+                component: () =>
+                  React.createElement(
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                      .default,
+                    { pagesPath: 'src/pages', hasRoutesInConfig: true },
+                  ),
+              },
+            ],
           },
           {
             path: '/admin',
@@ -107,7 +129,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -152,7 +174,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -190,7 +212,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -248,7 +270,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -289,7 +311,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -325,7 +347,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -358,7 +380,7 @@ const routes = [
               {
                 component: () =>
                   React.createElement(
-                    require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                    require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                       .default,
                     { pagesPath: 'src/pages', hasRoutesInConfig: true },
                   ),
@@ -372,7 +394,7 @@ const routes = [
           {
             component: () =>
               React.createElement(
-                require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+                require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
                   .default,
                 { pagesPath: 'src/pages', hasRoutesInConfig: true },
               ),
@@ -386,7 +408,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+            require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -400,7 +422,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('C:/Users/汁舞猪/Desktop/zhangqichen/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
+        require('D:/星愿/zhangqichen/node_modules/_umi-build-dev@1.18.5@umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),
